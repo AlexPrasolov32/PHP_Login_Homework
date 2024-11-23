@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Информация о пользователе</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="parent">
+    <div class="block">
+        <h1>Добро пожаловать, <?php echo $login; ?>!</h1>
+        <p>Дата и время авторизации: <?php echo $currentDateTime; ?></p>
+        <?php foreach ($serverInfo as $key => $value): ?>
+        <p><?php echo $key . ': ' . $value; ?></p>
+        <?php endforeach; ?>
+    </div>
+</div>
+</body>
+</html>
